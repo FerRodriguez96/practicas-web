@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una tabla compleja</title>
+    <style>
+        table{
+            text-align: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: separate; 
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        tr, td{
+            padding: 2px;
+        }
+        #celda1{
+            text-align: center;
+            vertical-align: top; 
+            background-color: rgb(153, 255, 153);
+        }
+        #celda2{
+            vertical-align: middle;
+            text-align: left; 
+            background-color: rgb(102, 255, 255);
+        }
+        #celda3, #celda5, #celda8{
+            vertical-align: top; 
+            text-align: center; 
+            color: red;
+        }
+        #celda4, #celda7{
+            vertical-align: top; 
+            text-align: center;
+        }
+        #celda6{
+            vertical-align: bottom; 
+            text-align: right; 
+            background-color: rgb(255, 153,255);
+        }
+    </style>
+</head>
+<body>
+    <table border ="3">
+    <caption><span>TITULO DE LA TABLA</span><br></caption>
+        <tbody>
+            <tr>
+                <th id="celda1" colspan="3" rowspan="1">
+                    <span>CELDA 1</span><br>
+                </th>
+            </tr>
+            <tr>
+                <td id= "celda2" colspan="1" rowspan="2">
+                    <span>CELDA 2</span>
+                </td>
+                <td id= "celda3" >
+                    <span>CELDA 3</span>
+                </td>
+                <td id= "celda4">
+                    <span>CELDA 4</span>
+                </td>
+            </tr>
+            <tr>
+                <td id= "celda5">
+                    <span>CELDA 5</span>
+                </td>
+                <td id="celda6" colspan="1" rowspan="2">
+                    <span>CELDA 6</span>
+                </td>
+            </tr>
+            <tr>
+                <td id= "celda7">
+                    <span>CELDA 7</span>
+                </td>
+                <td id= "celda8">
+                    <span>CELDA 8</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
