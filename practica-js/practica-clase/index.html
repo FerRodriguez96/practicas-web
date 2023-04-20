@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="scripts/index.js" defer type "module"></script>
+</head>
+<body>
+    <h1>
+        Contador de Puntos de Truco
+    </h1>
+
+    <div id="jugadoresContainer">
+
+        <div class = "jugadorContainer" id= jugador1Container>
+            <h2></h2>
+            <div class="cuenta"></div>
+            <div class="botonesJugador">
+                <button class="agregar">+</button>
+                <button class="restar">-</button>
+            </div>
+        </div>
+
+        <div class = "jugadorContainer" id= jugador2Container>
+            <h2></h2>
+            <div class="cuenta"></div>
+            <div class="botonesJugador">
+                <button class="agregar">+</button>
+                <button class="restar">-</button>
+            </div>
+        </div>
+    </div>
+
+    <button id="reset">Limpiar</button>
+
+    <dialog type="modal">
+        <p> ¿Desea borrar la puntuacion? </p>
+        <button id="aceptar">Limpiar</button>
+        <button id="cancelar">Volver</button>
+    </dialog>
+</body>
+</html>
