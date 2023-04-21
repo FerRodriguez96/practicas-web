@@ -2,8 +2,15 @@ table{
     margin: auto;
     border: 2px solid;
     text-align: center;
+    margin-top: 20px;
 }
 
 tr, td{
     border: 1px solid;
 }
+
+.mostrar {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }

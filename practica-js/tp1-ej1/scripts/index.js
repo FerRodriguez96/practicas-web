@@ -1,7 +1,7 @@
 const tabla = document.getElementById("tabla1");
 
 for (let i = 1; i <= 10; i++) {
-  // Creamos una nueva fila
+
   const fila = document.createElement("tr");
   const celda = document.createElement("td");
 
