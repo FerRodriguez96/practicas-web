@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/practica-js/tp1-ej3/css/styles.css">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <script>
+        const tabla = document.createElement("table");
+
+            for (let i=0;i<5;i++){
+                const fila = document.createElement("tr");
+                for (let j=0;j<5;j++){
+                    const celda = document.createElement("td");
+                    const textoCelda = document.createTextNode(i);
+                    celda.appendChild(textoCelda);
+            
+                    fila.appendChild(celda);
+                    tabla.appendChild(fila);
+                }
+            }
+        document.body.appendChild(tabla);
+    </script>
+</body>
+</html>
