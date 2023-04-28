@@ -1,3 +1,14 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    border: 2px solid;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid;
+}

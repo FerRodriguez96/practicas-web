@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/practica-php/tp-ej2/css/styles.css">
-    <title>Numeros Primos</title>
-</head>
-<body>
-	<?php 
-        if (!empty($numeros_primos)):
-        $numero = $_POST['numero']; 
-        echo "<h2>Numeros primos del $numero:</h2>";
-    ?>
-		<table>
-			<?php for ($i = 0; $i < 4; $i++): ?>
-				<tr>
-					<?php for ($j = 0; $j < 4; $j++): ?>
-						<td><?php echo $numeros_primos[$i * 4 + $j]; ?></td>
-					<?php endfor; ?>
-				</tr>
-			<?php endfor; ?>
-		</table>
-	<?php endif; ?>
-</body>
-</html>
-
 <?php
-
 function es_primo($numero) {
     // Si el numero es menor a 2 entonces solo tiene 1 divisor, por lo tanto no tiene numeros primos
     if ($numero < 2) {
@@ -66,3 +37,32 @@ if (isset($_POST['numero'])) {
 }
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Numeros Primos</title>
+</head>
+<body>
+	<?php 
+        if (!empty($numeros_primos)):
+        $numero = $_POST['numero']; 
+        echo "<h2>Numeros primos del $numero:</h2>";
+    ?>
+		<table>
+			<?php for ($i = 0; $i < 4; $i++): ?>
+				<tr>
+					<?php for ($j = 0; $j < 4; $j++): ?>
+						<td><?php echo $numeros_primos[$i * 4 + $j]; ?></td>
+					<?php endfor; ?>
+				</tr>
+			<?php endfor; ?>
+		</table>
+	<?php endif; ?>
+</body>
+</html>
+
+<?php
